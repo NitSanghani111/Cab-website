@@ -1,188 +1,540 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftCab - Premium Taxi Service</title>
-    <meta name="description" content="Professional taxi and cab service for all your transportation needs">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Maa Cab Service - Your Trusted Travel Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FACC15',
+                        secondary: '#1F2937'
+                    }
+                }
+            }
+        }
+    </script>
+   
 </head>
-<body>
+
+<body class="bg-white text-gray-800">
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-taxi"></i> 
-                <span>SwiftCab</span>
+    <nav class="navbar-glass sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 sm:h-24">
+                <!-- Logo and Brand -->
+                <div class="flex items-center space-x-3">
+                    <img src="./imgs/logo.jpg" alt="Maa Cab Logo"
+                        class="h-14 w-auto sm:h-16 object-contain rounded-md shadow-sm" />
+                    <span class="text-2xl font-bold text-secondary">Maa Cab Service</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link data-link">Home</a>
+                        <a href="#about" class="nav-link data-link">About</a>
+                        <a href="#services" class="nav-link data-link">Services</a>
+                        <a href="#gallery" class="nav-link data-link">Gallery</a>
+                        <a href="#contact" class="nav-link data-link">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn"
+                        class="text-gray-700 hover:text-primary transition-colors duration-300 transform hover:scale-110">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./pages/about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./pages/services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./pages/coverage.html" class="nav-link">Coverage</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./pages/contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 nav-link data-link">Home</a>
+                <a href="#about" class="block px-3 py-2 nav-link data-link">About</a>
+                <a href="#services" class="block px-3 py-2 nav-link data-link">Services</a>
+                <a href="#gallery" class="block px-3 py-2 nav-link data-link">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 nav-link data-link">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content" data-aos="fade-up">
-            <h1 class="hero-title">Premium Taxi Service</h1>
-            <p class="hero-subtitle">Safe, Reliable, and Comfortable Rides Anytime, Anywhere</p>
-            <div class="hero-buttons">
-                <a href="tel:+1234567890" class="btn btn-primary">
-                    <i class="fas fa-phone"></i> Book Now
-                </a>
-                <a href="./pages/services.html" class="btn btn-secondary">
-                    <i class="fas fa-info-circle"></i> Learn More
-                </a>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Why Choose SwiftCab?</h2>
-                <p>Experience the difference with our premium taxi service</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Video Background -->
+        <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay muted loop playsinline>
+            <source src="./imgs/demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60 z-10 backdrop-blur-sm"></div>
+
+        <!-- Content -->
+        <div class="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Left Side Text -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                        Your <span class="text-yellow-400">Trusted</span> Travel Partner
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+                        Safe, reliable, and comfortable cab services for all your travel needs. Experience the
+                        difference with Maa Cab Service.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="tel:+919876543210"
+                            class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:scale-105 transform transition duration-300 shadow-lg flex items-center justify-center">
+                            <i class="fas fa-phone mr-2"></i> Book Now
+                        </a>
+                        <a href="#about"
+                            class="bg-white bg-opacity-20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-30 transform hover:scale-105 transition duration-300 shadow-lg backdrop-blur-sm flex items-center justify-center">
+                            <i class="fas fa-info-circle mr-2"></i> Learn More
+                        </a>
                     </div>
-                    <h3>24/7 Availability</h3>
-                    <p>Round-the-clock service to meet your transportation needs anytime</p>
                 </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+
+                <!-- Right Side Icon -->
+                <div class="text-center lg:text-right">
+                    <div class="animate-bounce duration-1000">
+                        <i class="fas fa-car text-8xl md:text-9xl text-yellow-400 opacity-90"></i>
                     </div>
-                    <h3>Safe & Secure</h3>
-                    <p>Licensed drivers and well-maintained vehicles for your safety</p>
                 </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h3>Affordable Rates</h3>
-                    <p>Competitive pricing with transparent fare structure</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Easy Booking</h3>
-                    <p>Quick and convenient booking through phone or online</p>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2>Ready for Your Next Ride?</h2>
-                <p>Book your cab now and experience premium transportation service</p>
-                <div class="cta-buttons">
-                    <a href="tel:+1234567890" class="btn btn-primary btn-large">
-                        <i class="fas fa-phone"></i> Call Now: (123) 456-7890
+
+    <!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Heading -->
+    <div class="text-center mb-16 scroll-animate">
+      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Our Services</h2>
+      <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+        We provide comprehensive cab services tailored to meet all your transportation needs
+      </p>
+    </div>
+
+    <!-- Grid Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- CARD -->
+      <div class="service-card group p-8 rounded-xl relative z-0 scroll-animate">
+        <div class="text-center">
+          <div class="icon-wrap mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-map-marker-alt text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-secondary mb-2">Local Trips</h3>
+          <p class="text-gray-600 mb-4">Quick and convenient rides within the city for your daily commute and errands.</p>
+          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-card group p-8 rounded-xl relative z-0 scroll-animate">
+        <div class="text-center">
+          <div class="icon-wrap mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-plane text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-secondary mb-2">Airport Pickup</h3>
+          <p class="text-gray-600 mb-4">Reliable airport transfers with flight tracking and meet & greet service.</p>
+          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-card group p-8 rounded-xl relative z-0 scroll-animate">
+        <div class="text-center">
+          <div class="icon-wrap mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-suitcase text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-secondary mb-2">Tour Packages</h3>
+          <p class="text-gray-600 mb-4">Customized tour packages for sightseeing and outstation trips.</p>
+          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-card group p-8 rounded-xl relative z-0 scroll-animate">
+        <div class="text-center">
+          <div class="icon-wrap mb-4 mx-auto group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-clock text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-secondary mb-2">24/7 Service</h3>
+          <p class="text-gray-600 mb-4">Round-the-clock availability for all your emergency and late-night travel needs.</p>
+          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+            Learn More <i class="fas fa-arrow-right ml-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Text Content -->
+                <div class="scroll-animate">
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">Why Choose Maa Cab Service?</h2>
+                    <p class="text-xl text-gray-700 mb-8">We're committed to providing exceptional service that exceeds
+                        your expectations</p>
+
+                    <div class="space-y-6">
+                        <!-- Repeat block -->
+                        <div class="flex items-start group">
+                            <div
+                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-shield-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-secondary mb-2">Safety First</h3>
+                                <p class="text-gray-600">All our drivers are verified and trained. Our vehicles undergo
+                                    regular maintenance and safety checks.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start group">
+                            <div
+                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-dollar-sign text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-secondary mb-2">Affordable Rates</h3>
+                                <p class="text-gray-600">Competitive pricing with no hidden charges. Get the best value
+                                    for your money.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start group">
+                            <div
+                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-clock text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-secondary mb-2">Punctual Service</h3>
+                                <p class="text-gray-600">We value your time. Our drivers are always on time and ready to
+                                    serve you.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start group">
+                            <div
+                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-heart text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-secondary mb-2">Customer Care</h3>
+                                <p class="text-gray-600">24/7 customer support to assist you with bookings, queries, and
+                                    any concerns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Counter Content -->
+                <div class="scroll-animate" id="counter-section">
+                    <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-12 max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+                            <!-- Card Item -->
+                            <div
+                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
+                                <div
+                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                                    <i class="fas fa-smile text-2xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="500">0</div>
+                                    <div class="text-gray-500 text-sm font-medium">Happy Customers</div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
+                                <div
+                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                                    <i class="fas fa-id-card text-2xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="50">0</div>
+                                    <div class="text-gray-500 text-sm font-medium">Expert Drivers</div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
+                                <div
+                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                                    <i class="fas fa-calendar-alt text-2xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="5">0</div>
+                                    <div class="text-gray-500 text-sm font-medium">Years of Experience</div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
+                                <div
+                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                                    <i class="fas fa-clock text-2xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="24">0</div>
+                                    <div class="text-gray-500 text-sm font-medium">24/7 Availability</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Enhanced Call to Action Banner -->
+    <section class="relative py-20 bg-cover bg-center overflow-hidden"
+        style="background-image: url('https://plus.unsplash.com/premium_photo-1661922380380-e214c7130cad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+
+        <!-- CTA Content -->
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <div class="max-w-3xl mx-auto text-white">
+                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    Ready to Book Your Ride?
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-10">
+                    Get started with Maa Cab Service today and experience the difference in quality transportation.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                    <!-- Call Now -->
+                    <a href="tel:+919876543210"
+                        class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-yellow-400 text-black font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-phone text-xl"></i>
+                        Call Now
                     </a>
-                    <a href="./pages/contact.html" class="btn btn-outline btn-large">
-                        <i class="fas fa-envelope"></i> Get Quote
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/919876543210" target="_blank"
+                        class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl border border-white/30 text-white font-semibold text-lg hover:bg-white/10 hover:scale-105 transition-all duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        WhatsApp
                     </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="mt-8 text-large text-gray-300">
+                    <p> +91 98765 43210 &nbsp; | &nbsp; Available 24/7</p>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Modern Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">Don't just take our word for it - hear from our
+                    satisfied customers</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 scroll-animate">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Excellent service! The driver was punctual and
+                        the car was clean. I'll definitely use Maa Cab Service again for my future travels."</p>
+                    <div class="flex items-center">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-secondary">Rajesh Kumar</div>
+                            <div class="text-gray-500 text-sm">Business Executive</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 scroll-animate">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Safe and reliable service. The driver was
+                        courteous and helped with our luggage. Highly recommend for airport transfers."</p>
+                    <div class="flex items-center">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-secondary">Priya Sharma</div>
+                            <div class="text-gray-500 text-sm">Teacher</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 scroll-animate">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-600">5.0</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Great experience with their tour package. The
+                        driver was knowledgeable about local attractions and made our trip memorable."</p>
+                    <div class="flex items-center">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-secondary">Amit Patel</div>
+                            <div class="text-gray-500 text-sm">Tourist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-taxi"></i>
-                        <span>SwiftCab</span>
+    <footer id="contact" class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-taxi text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Maa Cab Service</span>
                     </div>
-                    <p>Your trusted partner for safe and reliable transportation services.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <p class="text-gray-300 mb-4">Your trusted travel partner for safe, reliable, and comfortable cab
+                        services. We're here to serve you 24/7.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-facebook-f text-primary"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter text-primary"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram text-primary"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-whatsapp text-primary"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="./pages/about.html">About</a></li>
-                        <li><a href="./pages/services.html">Services</a></li>
-                        <li><a href="./pages/coverage.html">Coverage</a></li>
-                        <li><a href="./pages/contact.html">Contact</a></li>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">About Us</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Services</a>
+                        </li>
+                        <li><a href="#gallery"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+1234567890">(123) 456-7890</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:info@swiftcab.com">info@swiftcab.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Main St, City, State 12345</span>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary mr-3"></i>
+                            <span class="text-gray-300">+91 98765 43210</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-3"></i>
+                            <span class="text-gray-300">info@maacabservice.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span class="text-gray-300">123 Main Street, City, State 12345</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-primary mr-3"></i>
+                            <span class="text-gray-300">24/7 Service Available</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SwiftCab. All rights reserved.</p>
+
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Maa Cab Service. All rights reserved. | Designed with ❤️ for your
+                    comfort</p>
             </div>
         </div>
     </footer>
 
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="./js/script.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
