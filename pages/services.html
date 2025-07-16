@@ -595,13 +595,38 @@
     <script src="../js/services.js"></script>
     <script>
 
-        fetch("../partials/header.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("header").innerHTML = data);
+             // Mobile menu toggle
+  fetch("partials/header.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
 
-        fetch("../partials/fotter.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("fotter").innerHTML = data);
+      // Wait briefly to allow DOM to register elements
+      setTimeout(() => {
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        if (!btn || !menu) {
+          console.error("Menu toggle failed");
+          return;
+        }
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+
+          const icon = btn.querySelector("i");
+          if (icon) {
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-xmark");
+          }
+        });
+      }, 50); // 50ms delay works fine
+    });
+    fetch("partials/fotter.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("fotter").innerHTML = data;
+    });
         </script>
 
   
