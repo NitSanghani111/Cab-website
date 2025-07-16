@@ -1,222 +1,365 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - SwiftCab</title>
-    <meta name="description" content="Learn about SwiftCab's commitment to providing premium taxi services">
+    <title>About Us - Maa Cab Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+   <link rel="stylesheet" href="../css/aboutus.css">
+<link rel="stylesheet" href="../css/globe.css">
+
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+  
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-taxi"></i>
-                <span>SwiftCab</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link active">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./coverage.html" class="nav-link">Coverage</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 data-aos="fade-up">About SwiftCab</h1>
-            <p data-aos="fade-up" data-aos-delay="100">Your trusted transportation partner since 2010</p>
-        </div>
-    </section>
-
-    <!-- About Content -->
-    <section class="about-content">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text" data-aos="fade-right">
-                    <h2>Our Story</h2>
-                    <p>Founded in 2010, SwiftCab has been serving the community with reliable and professional taxi services for over a decade. What started as a small family business has grown into the region's most trusted transportation company.</p>
-                    
-                    <p>We understand that getting from point A to point B should be safe, comfortable, and stress-free. That's why we've built our reputation on three core principles: reliability, safety, and exceptional customer service.</p>
-                    
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>10,000+</h3>
-                            <p>Happy Customers</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>50+</h3>
-                            <p>Professional Drivers</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>24/7</h3>
-                            <p>Service Available</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional taxi service" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission">
-        <div class="container">
-            <div class="mission-content" data-aos="fade-up">
-                <h2>Our Mission</h2>
-                <p>To provide safe, reliable, and comfortable transportation services that exceed our customers' expectations while contributing positively to our community.</p>
-            </div>
-            <div class="values-grid">
-                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-heart"></i>
-                    <h3>Customer First</h3>
-                    <p>Your comfort and satisfaction are our top priorities in every ride</p>
-                </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-star"></i>
-                    <h3>Excellence</h3>
-                    <p>We strive for excellence in every aspect of our service delivery</p>
-                </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Integrity</h3>
-                    <p>Honest, transparent, and ethical business practices guide everything we do</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Meet Our Team</h2>
-                <p>Professional drivers committed to your safety and comfort</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="team-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="John Smith" />
-                    </div>
-                    <h3>John Smith</h3>
-                    <p>Fleet Manager</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="team-image">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sarah Johnson" />
-                    </div>
-                    <h3>Sarah Johnson</h3>
-                    <p>Customer Service Manager</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="team-image">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mike Wilson" />
-                    </div>
-                    <h3>Mike Wilson</h3>
-                    <p>Operations Director</p>
-                    <div class="team-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-taxi"></i>
-                        <span>SwiftCab</span>
-                    </div>
-                    <p>Your trusted partner for safe and reliable transportation services.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="coverage.html">Coverage</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+1234567890">(123) 456-7890</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:info@swiftcab.com">info@swiftcab.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Main St, City, State 12345</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SwiftCab. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<body class="bg-gray-50">
+<div id="header"></div>
     
-    <!-- Custom JavaScript -->
-    <script src="../js/script.js"></script>
+
+    <!-- Hero Banner -->
+    <section class="hero-bg relative h-[65vh] flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-secondary bg-opacity-50"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in gradient-text">About Us</h1>
+            <p class="text-xl md:text-2xl mb-8 fade-in text-gray-200 font-light">Your trusted partner for safe and comfortable journeys</p>
+            <div class="icon-bounce">
+                <svg class="w-8 h-8 mx-auto text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="slide-in-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-8">Welcome to <span class="gradient-text">Maa Cab Service</span></h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Since our inception, Maa Cab Service has been dedicated to providing exceptional transportation solutions across the region. With a deep understanding of our customers' needs and a commitment to excellence, we have built a reputation as the most trusted cab service in the area.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Our journey began with a simple vision: to make transportation accessible, reliable, and comfortable for everyone. Today, we proudly serve thousands of satisfied customers daily, connecting people to their destinations with care and professionalism.
+                    </p>
+                    <div class="flex flex-wrap gap-6 mt-8">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">24/7 Service</h4>
+                                <p class="text-gray-600">Always available</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary">Wide Coverage</h4>
+                                <p class="text-gray-600">Across all cities</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-in-right">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
+                             alt="Modern taxi fleet" 
+                             class="rounded-2xl shadow-2xl w-full h-96 object-cover">
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary rounded-full flex items-center justify-center pulse-animation">
+                            <svg class="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">Our Mission & Values</h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">Driven by purpose, guided by values, and committed to excellence in every journey</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mission Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Our Mission</h3>
+                    <p class="text-gray-700 leading-relaxed">To provide safe, reliable, and comfortable transportation services that connect people to their destinations while exceeding their expectations at every touchpoint.</p>
+                </div>
+
+                <!-- Safety Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Safety First</h3>
+                    <p class="text-gray-700 leading-relaxed">Your safety is our top priority. We maintain the highest safety standards with regular vehicle inspections, background-verified drivers, and real-time monitoring.</p>
+                </div>
+
+                <!-- Customer Service Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Customer Care</h3>
+                    <p class="text-gray-700 leading-relaxed">We believe in building lasting relationships with our customers through exceptional service, transparent pricing, and genuine care for your comfort.</p>
+                </div>
+
+                <!-- Reliability Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Reliability</h3>
+                    <p class="text-gray-700 leading-relaxed">Count on us to be there when you need us. Our punctual service and dependable fleet ensure you reach your destination on time, every time.</p>
+                </div>
+
+                <!-- Innovation Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Innovation</h3>
+                    <p class="text-gray-700 leading-relaxed">We continuously embrace new technologies and methods to improve our service quality and make your booking experience seamless and efficient.</p>
+                </div>
+
+                <!-- Community Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover fade-in">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Community</h3>
+                    <p class="text-gray-700 leading-relaxed">We're proud to be part of the communities we serve, contributing to local economic growth and environmental sustainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driver Experience / Team Highlight -->
+
+<section class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="text-center mb-16 fade-in">
+                <div class="inline-flex items-center px-4 py-2 bg-yellow-500 text-gray-800 rounded-full text-sm font-semibold mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                    </svg>
+                    Our Professional Team
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                    Meet Our Professional Team
+                </h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                    Our experienced drivers are the heart of our service, ensuring every journey is safe and comfortable
+                </p>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+                <!-- Image Section -->
+                <div class="slide-in-left">
+                    <div class="relative group">
+                        <!-- Main Image -->
+                        <div class="relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover-lift">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                                 alt="Professional driver" 
+                                 class="w-full h-[400px] md:h-[500px] object-cover">
+                            <div class="absolute inset-0 image-overlay"></div>
+                        </div>
+                        
+                        <!-- Verification Badge -->
+                        <div class="absolute -top-3 -right-3 w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg">
+                            <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        
+                        <!-- Stats Badge -->
+                        <div class="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg border border-gray-100">
+                            <div class="text-2xl font-bold text-gray-800">500+</div>
+                            <div class="text-sm text-gray-700">Expert Drivers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Section -->
+                <div class="slide-in-right">
+                    <div class="space-y-8">
+                        <div class="inline-flex items-center px-4 py-2 bg-gray-800 text-yellow-500 rounded-full text-sm font-semibold">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"></path>
+                            </svg>
+                            Excellence Guaranteed
+                        </div>
+                        
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+                            Experienced & 
+                            <span class="text-yellow-500">Trusted Drivers</span>
+                        </h3>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Our drivers are more than just transportation providers – they're your trusted companions on the road. Each driver undergoes rigorous background checks, professional training, and maintains the highest standards of customer service.
+                        </p>
+                        
+                        <!-- Feature List -->
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-gray-100">
+                                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-800 font-medium">Licensed and certified professionals</span>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-gray-100">
+                                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-800 font-medium">Extensive local area knowledge</span>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-gray-100">
+                                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-800 font-medium">Regular safety training programs</span>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-gray-50 rounded-xl transition-all duration-300 hover:bg-gray-100">
+                                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-800 font-medium">Committed to customer satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="fade-in">
+                <div class="bg-gray-800 rounded-2xl p-8 md:p-12 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <!-- Stat 1 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2 counter">500+</div>
+                            <div class="text-lg text-gray-300 font-medium">Professional Drivers</div>
+                        </div>
+                        
+                        <!-- Stat 2 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2 counter">5+</div>
+                            <div class="text-lg text-gray-300 font-medium">Years Experience</div>
+                        </div>
+                        
+                        <!-- Stat 3 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2 counter">50,000+</div>
+                            <div class="text-lg text-gray-300 font-medium">Happy Customers</div>
+                        </div>
+                        
+                        <!-- Stat 4 -->
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">24/7</div>
+                            <div class="text-lg text-gray-300 font-medium">Service Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-br from-primary to-yellow-400">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">Ready to Experience the Difference?</h2>
+                <p class="text-xl text-gray-800 mb-8 max-w-2xl mx-auto">Join thousands of satisfied customers who trust Maa Cab Service for their transportation needs</p>
+                <button class="bg-secondary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-800 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    Book Your Ride Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
+
+<!-- <script src="../js/script.js"></> -->
+ <script>
+     // Mobile menu toggle
+
+  fetch("../partials/header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("../partials/fotter.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+      
+
+<script src="../js/about.js"></script>
 </body>
 </html>

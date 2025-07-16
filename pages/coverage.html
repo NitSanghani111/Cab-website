@@ -1,294 +1,354 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coverage Area - SwiftCab</title>
-    <meta name="description" content="Discover our extensive service coverage area and locations">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <title>Gallery - Maa Cab Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/globe.css">
+   <link rel="stylesheet" href="../css/gallary.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/tailwind-config.js"></script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-taxi"></i>
-                <span>SwiftCab</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="coverage.html" class="nav-link active">Coverage</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 data-aos="fade-up">Service Coverage</h1>
-            <p data-aos="fade-up" data-aos-delay="100">We serve a wide area with reliable taxi services</p>
+<body class="bg-gray-50">
+    <!-- Hero Header -->
+   
+    <section class="hero-bg text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Travel Gallery</h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Real moments from real journeys across Gujarat.
+            </p>
+            <div class="mt-8 w-24 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </div>
     </section>
 
-    <!-- Coverage Map Section -->
-    <section class="coverage-map">
-        <div class="container">
-            <div class="map-container" data-aos="fade-up">
-                <div class="map-placeholder">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Interactive Service Map</h3>
-                    <p>Coverage across the metropolitan area and surrounding regions</p>
-                </div>
+    <!-- Gallery Grid -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Journey Memories</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">
+                    Discover the beautiful destinations and comfortable travel experiences we provide across Gujarat
+                </p>
             </div>
-        </div>
-    </section>
-
-    <!-- Coverage Areas -->
-    <section class="coverage-areas">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Service Areas</h2>
-                <p>We provide comprehensive taxi services across these locations</p>
-            </div>
-            <div class="areas-grid">
-                <div class="area-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="area-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Downtown District</h3>
-                    <ul>
-                        <li>Financial District</li>
-                        <li>Business Center</li>
-                        <li>Shopping District</li>
-                        <li>Entertainment Quarter</li>
-                    </ul>
-                    <div class="area-features">
-                        <span class="feature-tag">24/7 Service</span>
-                        <span class="feature-tag">Quick Response</span>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <!-- Gallery Images -->
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=600&fit=crop', 'Ahmedabad Highway')">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&h=300&fit=crop" 
+                         alt="Scenic highway journey" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Ahmedabad Highway</h3>
+                        <p class="text-sm text-gray-300">Smooth roads to Gujarat's commercial capital</p>
                     </div>
                 </div>
-
-                <div class="area-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="area-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Residential Areas</h3>
-                    <ul>
-                        <li>Northside Neighborhoods</li>
-                        <li>Southside Communities</li>
-                        <li>Eastside Districts</li>
-                        <li>Westside Suburbs</li>
-                    </ul>
-                    <div class="area-features">
-                        <span class="feature-tag">Door-to-Door</span>
-                        <span class="feature-tag">Safe Routes</span>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop', 'Saputara Hills')">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=300&fit=crop" 
+                         alt="Mountain road trip" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Saputara Hills</h3>
+                        <p class="text-sm text-gray-300">Gujarat's only hill station experience</p>
                     </div>
                 </div>
-
-                <div class="area-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="area-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <h3>Airport & Transport Hubs</h3>
-                    <ul>
-                        <li>Main International Airport</li>
-                        <li>Regional Airport</li>
-                        <li>Central Train Station</li>
-                        <li>Bus Terminals</li>
-                    </ul>
-                    <div class="area-features">
-                        <span class="feature-tag">Flight Tracking</span>
-                        <span class="feature-tag">Priority Service</span>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&h=600&fit=crop', 'Surat Skyline')">
+                    <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400&h=300&fit=crop" 
+                         alt="City skyline view" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Surat Skyline</h3>
+                        <p class="text-sm text-gray-300">Diamond city's modern landscape</p>
                     </div>
                 </div>
-
-                <div class="area-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="area-icon">
-                        <i class="fas fa-h-square"></i>
-                    </div>
-                    <h3>Medical & Emergency</h3>
-                    <ul>
-                        <li>General Hospital</li>
-                        <li>Medical Centers</li>
-                        <li>Clinics & Specialists</li>
-                        <li>Emergency Services</li>
-                    </ul>
-                    <div class="area-features">
-                        <span class="feature-tag">Priority Response</span>
-                        <span class="feature-tag">Medical Assist</span>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1502780402662-acc01917124e?w=800&h=600&fit=crop', 'Diu Coastal Road')">
+                    <img src="https://images.unsplash.com/photo-1502780402662-acc01917124e?w=400&h=300&fit=crop" 
+                         alt="Coastal highway" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Diu Coastal Road</h3>
+                        <p class="text-sm text-gray-300">Scenic coastal drive to paradise</p>
                     </div>
                 </div>
-
-                <div class="area-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="area-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Educational Institutions</h3>
-                    <ul>
-                        <li>State University</li>
-                        <li>Community Colleges</li>
-                        <li>High Schools</li>
-                        <li>Training Centers</li>
-                    </ul>
-                    <div class="area-features">
-                        <span class="feature-tag">Student Discounts</span>
-                        <span class="feature-tag">Safe Transport</span>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop', 'Kutch Desert')">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop" 
+                         alt="Desert landscape" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Kutch Desert</h3>
+                        <p class="text-sm text-gray-300">White desert and cultural heritage</p>
                     </div>
                 </div>
-
-                <div class="area-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="area-icon">
-                        <i class="fas fa-tree"></i>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop', 'Somnath Temple')">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" 
+                         alt="Temple architecture" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Somnath Temple</h3>
+                        <p class="text-sm text-gray-300">Sacred pilgrimage destination</p>
                     </div>
-                    <h3>Recreational Areas</h3>
-                    <ul>
-                        <li>City Parks</li>
-                        <li>Sports Complexes</li>
-                        <li>Shopping Malls</li>
-                        <li>Tourist Attractions</li>
-                    </ul>
-                    <div class="area-features">
-                        <span class="feature-tag">Tourist Friendly</span>
-                        <span class="feature-tag">Group Bookings</span>
+                </div>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&h=600&fit=crop', 'Narmada Dam')">
+                    <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=400&h=300&fit=crop" 
+                         alt="Peaceful lake view" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Narmada Dam</h3>
+                        <p class="text-sm text-gray-300">Serene waters and engineering marvel</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop', 'Gir National Park')">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" 
+                         alt="Forest pathway" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Gir National Park</h3>
+                        <p class="text-sm text-gray-300">Home of the Asiatic Lions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1501436513145-30f24e19fcc4?w=800&h=600&fit=crop', 'Dwarka Sunset')">
+                    <img src="https://images.unsplash.com/photo-1501436513145-30f24e19fcc4?w=800&h=600&fit=crop" 
+                         alt="Sunset journey" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Dwarka Sunset</h3>
+                        <p class="text-sm text-gray-300">Divine city's golden hour</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=600&fit=crop', 'Bhuj Village')">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=300&fit=crop" 
+                         alt="Village landscape" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Bhuj Village</h3>
+                        <p class="text-sm text-gray-300">Traditional Gujarat rural life</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop', 'Rani Ki Vav')">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" 
+                         alt="Historic monument" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Rani Ki Vav</h3>
+                        <p class="text-sm text-gray-300">UNESCO World Heritage stepwell</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-image overflow-hidden rounded-lg shadow-md relative cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop', 'Gandhinagar Evening')">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop" 
+                         alt="City lights evening" 
+                         class="w-full h-48 object-cover">
+                    <div class="place-overlay">
+                        <h3 class="font-semibold text-lg">Gandhinagar Evening</h3>
+                        <p class="text-sm text-gray-300">Capital city's planned beauty</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Coverage Stats -->
-    <section class="coverage-stats">
-        <div class="container">
-            <div class="stats-grid" data-aos="fade-up">
-                <div class="stat-item">
-                    <div class="stat-number">150+</div>
-                    <div class="stat-label">Square Miles</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">25+</div>
-                    <div class="stat-label">Neighborhoods</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">5 Min</div>
-                    <div class="stat-label">Avg Response</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99%</div>
-                    <div class="stat-label">Coverage Rate</div>
+     <section class="py-16 bg-gray-800 text-white">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Plan Your Journey Today</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Experience comfortable and reliable travel across Gujarat with Maa Cab Service
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+919876543210" 
+                   class="bg-yellow-500 text-gray-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition duration-300 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    Call Now
+                </a>
+                
+                <a href="https://wa.me/919876543210" 
+                   class="bg-transparent border-2 border-yellow-500 text-yellow-500 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-500 hover:text-gray-800 transition duration-300 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+                <p class="text-gray-700">Real experiences from real travelers</p>
+            </div>
+            
+            <div class="overflow-x-auto scroll-snap-x">
+                <div class="flex space-x-6 pb-4" style="width: max-content;">
+                    <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-md scroll-snap-start w-80 flex-shrink-0">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-gray-800 font-bold">
+                                R
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold text-gray-800">Rajesh Patel</h4>
+                                <p class="text-sm text-gray-600">Ahmedabad</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Excellent service! The driver was punctual and very professional. Made our family trip to Somnath memorable and comfortable."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            ★★★★★
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-md scroll-snap-start w-80 flex-shrink-0">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-gray-800 font-bold">
+                                P
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold text-gray-800">Priya Shah</h4>
+                                <p class="text-sm text-gray-600">Surat</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Safe and reliable service. Used Maa Cab Service for our Dwarka trip. Clean vehicles and reasonable rates. Highly recommended!"
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            ★★★★★
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow-md scroll-snap-start w-80 flex-shrink-0">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-gray-800 font-bold">
+                                M
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold text-gray-800">Mehul Desai</h4>
+                                <p class="text-sm text-gray-600">Vadodara</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Great experience with Maa Cab Service. Comfortable journey to Gir National Park. Driver was knowledgeable about local attractions."
+                        </p>
+                        <div class="mt-4 text-yellow-500">
+                            ★★★★★
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Special Coverage Info -->
-    <section class="special-coverage">
-        <div class="container">
-            <div class="coverage-info" data-aos="fade-up">
-                <h2>Extended Coverage Information</h2>
-                <div class="info-grid">
-                    <div class="info-card">
-                        <i class="fas fa-clock"></i>
-                        <h3>24/7 Availability</h3>
-                        <p>Round-the-clock service in all coverage areas with varying response times based on location and demand.</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-route"></i>
-                        <h3>Long Distance</h3>
-                        <p>We also provide intercity travel services connecting to nearby cities and towns within a 100-mile radius.</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>Not Sure?</h3>
-                        <p>If you're unsure whether we serve your area, give us a call and we'll let you know about service availability.</p>
-                    </div>
-                </div>
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div class="text-center mt-4">
+                <h3 id="modalTitle" class="text-2xl font-bold text-white mb-2"></h3>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-taxi"></i>
-                        <span>SwiftCab</span>
+    <!-- Call to Action -->
+   
+     <!-- Footer -->
+    <footer id="contact" class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-taxi text-primary text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Maa Cab Service</span>
                     </div>
-                    <p>Your trusted partner for safe and reliable transportation services.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <p class="text-gray-300 mb-4">Your trusted travel partner for safe, reliable, and comfortable cab
+                        services. We're here to serve you 24/7.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-facebook-f text-primary"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter text-primary"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram text-primary"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-primary bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-whatsapp text-primary"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="coverage.html">Coverage</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">About Us</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Services</a>
+                        </li>
+                        <li><a href="#gallery"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Gallery</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-300 hover:text-primary transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+1234567890">(123) 456-7890</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:info@swiftcab.com">info@swiftcab.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Main St, City, State 12345</span>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary mr-3"></i>
+                            <span class="text-gray-300">+91 98765 43210</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-3"></i>
+                            <span class="text-gray-300">info@maacabservice.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                            <span class="text-gray-300">123 Main Street, City, State 12345</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-primary mr-3"></i>
+                            <span class="text-gray-300">24/7 Service Available</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SwiftCab. All rights reserved.</p>
+
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 Maa Cab Service. All rights reserved. | Designed with ❤️ for your
+                    comfort</p>
             </div>
         </div>
     </footer>
+      <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
 
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="../js/script.js"></script>
+<script src="../js/gallary.js"></script>
 </body>
 </html>

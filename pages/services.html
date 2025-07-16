@@ -1,254 +1,609 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - SwiftCab</title>
-    <meta name="description" content="Explore our comprehensive taxi and transportation services">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <title>Our Services - Maa Cab Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/tailwind-config.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/globe.css">
+
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-taxi"></i>
-                <span>SwiftCab</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class="nav-link active">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="coverage.html" class="nav-link">Coverage</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 data-aos="fade-up">Our Services</h1>
-            <p data-aos="fade-up" data-aos-delay="100">Comprehensive transportation solutions for every need</p>
-        </div>
-    </section>
+<body class="bg-gray-50">
+    <div id="header"></div>
 
-    <!-- Services Grid -->
-    <section class="services-grid">
-        <div class="container">
-            <div class="services-container">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <h3>Airport Transfer</h3>
-                    <p>Reliable airport pickup and drop-off services. Track your flight and get real-time updates for a stress-free travel experience.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Flight tracking</li>
-                        <li><i class="fas fa-check"></i> Meet & greet service</li>
-                        <li><i class="fas fa-check"></i> 24/7 availability</li>
-                    </ul>
-                    <div class="service-price">Starting from $35</div>
-                </div>
+    <!-- Hero Section -->
+    <section class="relative hero-bg gradient-bg hero-pattern overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="text-center animate-fade-in">
 
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-city"></i>
-                    </div>
-                    <h3>City Rides</h3>
-                    <p>Quick and convenient rides within the city. Perfect for daily commutes, shopping trips, or exploring the urban landscape.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Quick pickup</li>
-                        <li><i class="fas fa-check"></i> Multiple stops</li>
-                        <li><i class="fas fa-check"></i> Comfortable vehicles</li>
-                    </ul>
-                    <div class="service-price">Starting from $15</div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <i class="fas fa-route"></i>
-                    </div>
-                    <h3>Long Distance</h3>
-                    <p>Comfortable long-distance travel for intercity trips. Spacious vehicles with amenities for a pleasant journey.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Premium vehicles</li>
-                        <li><i class="fas fa-check"></i> Professional drivers</li>
-                        <li><i class="fas fa-check"></i> Rest stops included</li>
-                    </ul>
-                    <div class="service-price">Starting from $80</div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Corporate Travel</h3>
-                    <p>Executive transportation for business professionals. Reliable service for meetings, conferences, and corporate events.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Premium fleet</li>
-                        <li><i class="fas fa-check"></i> Punctual service</li>
-                        <li><i class="fas fa-check"></i> Corporate billing</li>
-                    </ul>
-                    <div class="service-price">Starting from $45</div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Special Events</h3>
-                    <p>Transportation for weddings, parties, and special occasions. Making your special day even more memorable with luxury service.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Luxury vehicles</li>
-                        <li><i class="fas fa-check"></i> Decorated cars available</li>
-                        <li><i class="fas fa-check"></i> Group bookings</li>
-                    </ul>
-                    <div class="service-price">Starting from $100</div>
-                </div>
-
-                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Hourly Rental</h3>
-                    <p>Flexible hourly rental service for multiple stops, shopping trips, or when you need a driver for the day.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Flexible timing</li>
-                        <li><i class="fas fa-check"></i> Multiple destinations</li>
-                        <li><i class="fas fa-check"></i> Personal driver</li>
-                    </ul>
-                    <div class="service-price">Starting from $25/hour</div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Our Services
+                </h1>
+                <p class="text-xl md:text-2xl text-white font-medium mb-8">
+                    Reliable Rides Across Saurashtra
+                </p>
+                <div class="icon-bounce">
+                    <svg class="w-8 h-8 mx-auto text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Fleet Section -->
-    <section class="fleet">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Our Fleet</h2>
-                <p>Modern, well-maintained vehicles for your comfort and safety</p>
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Maa Cab Service?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Experience the difference with our premium cab
+                    service designed for your comfort and safety.</p>
             </div>
-            <div class="fleet-grid">
-                <div class="fleet-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="fleet-image">
-                        <img src="https://images.unsplash.com/photo-1550355191-aa8a80b41353?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Economy Car" />
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white text-2xl"></i>
                     </div>
-                    <h3>Economy</h3>
-                    <p>Compact and fuel-efficient vehicles perfect for solo travelers or couples.</p>
-                    <div class="fleet-features">
-                        <span><i class="fas fa-users"></i> 1-2 passengers</span>
-                        <span><i class="fas fa-suitcase"></i> 2 bags</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">24/7 Available</h3>
+                    <p class="text-gray-600">Round-the-clock service for all your travel needs</p>
+                </div>
+
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-check text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Trusted Drivers</h3>
+                    <p class="text-gray-600">Experienced and verified drivers for your safety</p>
+                </div>
+
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-car text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Clean Cars</h3>
+                    <p class="text-gray-600">Well-maintained and sanitized vehicles</p>
+                </div>
+
+                <div class="text-center p-6 card-hover bg-gray-50 rounded-xl">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rupee-sign text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Fair Pricing</h3>
+                    <p class="text-gray-600">Transparent and competitive rates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div class="text-center mb-12 ">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Choose from our wide range of transportation services
+                    tailored to meet your specific needs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Local Ride -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Local Ride</h3>
+                    <p class="text-gray-600 mb-4">Quick and convenient rides within the city. Perfect for daily
+                        commutes, shopping trips, and local errands.</p>
+                    <div class="flex items-center text-yellow-500 font-medium">
+                        <span>Book Now</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
                     </div>
                 </div>
-                <div class="fleet-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="fleet-image">
-                        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Standard Car" />
+
+                <!-- Outstation -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-road text-white text-2xl"></i>
                     </div>
-                    <h3>Standard</h3>
-                    <p>Comfortable sedans with ample space for passengers and luggage.</p>
-                    <div class="fleet-features">
-                        <span><i class="fas fa-users"></i> 1-4 passengers</span>
-                        <span><i class="fas fa-suitcase"></i> 3 bags</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Outstation</h3>
+                    <p class="text-gray-600 mb-4">Comfortable long-distance travel to nearby cities and towns.
+                        Experienced drivers for safe highway journeys.</p>
+                    <div class="flex items-center text-yellow-500 font-medium">
+                        <span>Book Now</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
                     </div>
                 </div>
-                <div class="fleet-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="fleet-image">
-                        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Premium SUV" />
+
+                <!-- Pilgrimage Tour -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-praying-hands text-white text-2xl"></i>
                     </div>
-                    <h3>Premium SUV</h3>
-                    <p>Spacious SUVs perfect for families or groups with extra luggage.</p>
-                    <div class="fleet-features">
-                        <span><i class="fas fa-users"></i> 1-6 passengers</span>
-                        <span><i class="fas fa-suitcase"></i> 5 bags</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Pilgrimage Tour</h3>
+                    <p class="text-gray-600 mb-4">Sacred journeys to holy places like Somnath, Dwarka, and other
+                        pilgrimage destinations with devotional care.</p>
+                    <div class="flex items-center text-yellow-500 font-medium">
+                        <span>Book Now</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- One-Way Drop -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-location-arrow text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">One-Way Drop</h3>
+                    <p class="text-gray-600 mb-4">Efficient one-way transportation service for your convenience. No
+                        return charges, just pay for your journey.</p>
+                    <div class="flex items-center text-yellow-500 font-medium">
+                        <span>Book Now</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Airport Pickup/Drop -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-plane text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Airport Pickup/Drop</h3>
+                    <p class="text-gray-600 mb-4">Reliable airport transfers with flight tracking. Punctual service for
+                        hassle-free travel experiences.</p>
+                    <div class="flex items-center text-yellow-500 font-medium">
+                        <span>Book Now</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </div>
+
+                <!-- Custom Tour -->
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-route text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Custom Tour</h3>
+                    <p class="text-gray-600 mb-4">Personalized tour packages designed according to your preferences and
+                        schedule. Explore at your own pace.</p>
+                    <div class="flex items-center text-yellow-500 font-medium">
+                        <span>Book Now</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Service Area Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Service Areas</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We proudly serve major cities and tourist
+                    destinations across Gujarat and beyond.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Somnath -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-yellow-400 to-orange-500">
+                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=400&h=300&fit=crop&crop=center"
+                            alt="Somnath Temple"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Somnath</h3>
+                        <p class="text-white text-sm opacity-90">Sacred Temple Town</p>
+                    </div>
+                </div>
+
+                <!-- Dwarka -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-blue-400 to-purple-500">
+                        <img src="https://images.unsplash.com/photo-1609086143085-2e1b80f26b98?w=400&h=300&fit=crop&crop=center"
+                            alt="Dwarka Temple"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Dwarka</h3>
+                        <p class="text-white text-sm opacity-90">Krishna's City</p>
+                    </div>
+                </div>
+
+                <!-- Diu -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-cyan-400 to-blue-500">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center"
+                            alt="Diu Beach"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Diu</h3>
+                        <p class="text-white text-sm opacity-90">Coastal Paradise</p>
+                    </div>
+                </div>
+
+                <!-- Rajkot -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-green-400 to-teal-500">
+                        <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400&h=300&fit=crop&crop=center"
+                            alt="Rajkot City"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Rajkot</h3>
+                        <p class="text-white text-sm opacity-90">Industrial Hub</p>
+                    </div>
+                </div>
+
+                <!-- Junagadh -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-purple-400 to-pink-500">
+                        <img src="https://images.unsplash.com/photo-1580500431643-ae8c0ab6e9d9?w=400&h=300&fit=crop&crop=center"
+                            alt="Junagadh Fort"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Junagadh</h3>
+                        <p class="text-white text-sm opacity-90">Historic Fort City</p>
+                    </div>
+                </div>
+
+                <!-- Porbandar -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-orange-400 to-red-500">
+                        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400&h=300&fit=crop&crop=center"
+                            alt="Porbandar Coast"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Porbandar</h3>
+                        <p class="text-white text-sm opacity-90">Gandhi's Birthplace</p>
+                    </div>
+                </div>
+
+                <!-- Jamnagar -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-indigo-400 to-purple-500">
+                        <img src="https://images.unsplash.com/photo-1588581791575-041d9ac84a97?w=400&h=300&fit=crop&crop=center"
+                            alt="Jamnagar Palace"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Jamnagar</h3>
+                        <p class="text-white text-sm opacity-90">Jewel of Kathiawar</p>
+                    </div>
+                </div>
+
+                <!-- Ahmedabad -->
+                <div
+                    class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-yellow-400 to-orange-500">
+                        <img src="https://images.unsplash.com/photo-1604498500046-27a3e85d8a3b?w=400&h=300&fit=crop&crop=center"
+                            alt="Ahmedabad Skyline"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 class="text-white font-bold text-lg mb-1">Ahmedabad</h3>
+                        <p class="text-white text-sm opacity-90">Heritage City</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Cities Text Row -->
+            <div class="mt-8 text-center">
+                <p class="text-lg text-gray-600 mb-4">We also serve:</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Surat</span>
+                    <span
+                        class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Vadodara</span>
+                    <span
+                        class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Veraval</span>
+                    <span
+                        class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Bhavnagar</span>
+                    <span
+                        class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Gandhinagar</span>
+                    <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">+ Many
+                        More</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Real experiences from our satisfied customers across
+                    Saurashtra.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Excellent service! The driver was punctual and the car was
+                        very clean. Used for Somnath darshan and had a wonderful experience."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800">Rajesh Patel</h4>
+                            <p class="text-gray-600 text-sm">Rajkot</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Very reliable service for airport transfers. Never missed a
+                        flight thanks to their punctuality. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800">Priya Shah</h4>
+                            <p class="text-gray-600 text-sm">Ahmedabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">"Professional drivers and fair pricing. Used for our family
+                        trip to Dwarka. The journey was comfortable and safe."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800">Amit Joshi</h4>
+                            <p class="text-gray-600 text-sm">Junagadh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20 bg-cover bg-center bg-no-repeat relative" style="background-image: url('../imgs/temp.jpg');">
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-5 tracking-tight">
+                Ready for Your Next Ride?
+            </h2>
+            <p class="text-xl text-gray-300 mb-12 font-medium">
+                Experience premium transportation with just one call
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                <a href="tel:+919876543210"
+                    class="group inline-flex items-center justify-center px-8 py-4 bg-primary text-white rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:text-gray-900 hover:shadow-2xl hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 min-w-[280px]">
+                    <i class="fas fa-phone mr-3 text-xl group-hover:animate-pulse"></i>
+                    Call: +91 98765 43210
+                </a>
+
+                <a href="https://wa.me/919876543210"
+                    class="group inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-green-500 hover:shadow-2xl hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-green-500/50 min-w-[280px]">
+                    <i class="fab fa-whatsapp mr-3 text-xl group-hover:animate-pulse"></i>
+                    WhatsApp Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 relative">
+                <div
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-5 w-20 h-1 bg-gradient-to-r from-primary to-yellow-500 rounded-full">
+                </div>
+                <h2
+                    class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-primary to-yellow-500 bg-clip-text text-transparent mb-5 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600 font-medium">Get instant answers to common questions about our premium
+                    cab services</p>
+            </div>
+
+            <div class="space-y-5">
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-7 py-6 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-20 transition-all duration-300 hover:bg-gray-50"
+                        onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-gray-800 pr-4">How do I book a cab?</span>
+                            <i
+                                class="fas fa-chevron-down text-primary text-lg transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-50">
+                        <div class="px-7 py-6">
+                            <p class="text-gray-600 leading-relaxed">You can book a cab by calling our 24/7 helpline or
+                                messaging us on WhatsApp. Our advanced booking system confirms your ride instantly and
+                                provides real-time driver details and tracking information.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-7 py-6 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-20 transition-all duration-300 hover:bg-gray-50"
+                        onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-gray-800 pr-4">Are your drivers verified?</span>
+                            <i
+                                class="fas fa-chevron-down text-primary text-lg transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-50">
+                        <div class="px-7 py-6">
+                            <p class="text-gray-600 leading-relaxed">Absolutely! All our drivers undergo rigorous
+                                verification including license validation, background checks, and professional training.
+                                We ensure only the most experienced and trustworthy drivers serve our customers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-7 py-6 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-20 transition-all duration-300 hover:bg-gray-50"
+                        onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-gray-800 pr-4">What are your payment options?</span>
+                            <i
+                                class="fas fa-chevron-down text-primary text-lg transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-50">
+                        <div class="px-7 py-6">
+                            <p class="text-gray-600 leading-relaxed">We accept multiple payment methods including cash,
+                                UPI, credit/debit cards, and digital wallets. Payments can be made directly to the
+                                driver or through our secure online payment gateway with end-to-end encryption.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-7 py-6 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-20 transition-all duration-300 hover:bg-gray-50"
+                        onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-gray-800 pr-4">Do you provide outstation
+                                services?</span>
+                            <i
+                                class="fas fa-chevron-down text-primary text-lg transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-50">
+                        <div class="px-7 py-6">
+                            <p class="text-gray-600 leading-relaxed">Yes, we offer comprehensive outstation services
+                                across Gujarat and neighboring states. Our experienced drivers and well-maintained
+                                vehicles ensure safe, comfortable, and punctual long-distance travel with competitive
+                                pricing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-7 py-6 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-20 transition-all duration-300 hover:bg-gray-50"
+                        onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-gray-800 pr-4">Can I cancel my booking?</span>
+                            <i
+                                class="fas fa-chevron-down text-primary text-lg transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-50">
+                        <div class="px-7 py-6">
+                            <p class="text-gray-600 leading-relaxed">Yes, you can cancel your booking easily. Contact us
+                                at least 30 minutes before your scheduled pickup time for free cancellation. For
+                                last-minute cancellations, minimal charges may apply as per our transparent cancellation
+                                policy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-taxi"></i>
-                        <span>SwiftCab</span>
-                    </div>
-                    <p>Your trusted partner for safe and reliable transportation services.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="coverage.html">Coverage</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+1234567890">(123) 456-7890</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:info@swiftcab.com">info@swiftcab.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Main St, City, State 12345</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SwiftCab. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="fotter"></div>
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
 
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="../js/script.js"></script>
-</body>
-</html>
+
+    <script src="../js/services.js"></script>
+    <script>
+
+        fetch("../partials/header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../partials/fotter.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("fotter").innerHTML = data);
+        </script>
+
+  
+</body >
+</html >
