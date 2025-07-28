@@ -5,34 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maa Cab Service - Your Trusted Travel Partner</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpv01gwka/image/upload/v1752859333/logo_thvqnn.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#FACC15',
-                        secondary: '#1F2937'
-                    }
-                }
-            }
-        }
-    </script>
-   
+    <link rel="stylesheet" href="./css/styles.css">
+   <script src="./js/tailwind-config.js"></script>
+
+
 </head>
 
 <body class="bg-white text-gray-800">
     <!-- Navigation -->
-     <div id="header"></div>
+    <div id="header"></div>
 
 
 
     <!-- Hero Section with Video Background -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Video Background -->
         <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay muted loop playsinline>
-            <source src="./imgs/demo.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/dpv01gwka/video/upload/v1752859568/demo_awthnp.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -42,220 +34,193 @@
         <!-- Content -->
         <div class="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
                 <!-- Left Side Text -->
                 <div class="text-center lg:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                        Your <span class="text-yellow-400">Trusted</span> Travel Partner
+                    <h1 class="hero-text text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                        Your <span class="text-yellow-400 animate-pulse-slow">Trusted</span> Travel Partner
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+                    <p class="hero-subtitle text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
                         Safe, reliable, and comfortable cab services for all your travel needs. Experience the
                         difference with Maa Cab Service.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="tel:+919876543210"
-                            class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:scale-105 transform transition duration-300 shadow-lg flex items-center justify-center">
-                            <i class="fas fa-phone mr-2"></i> Book Now
+                    <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="./pages/contact.html"
+                            class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow-lg flex items-center gap-2 justify-center hover:scale-105 transform transition duration-300 animate-bounce-slow">
+                            <i class="fas fa-phone"></i>
+                            <span>Book Now</span>
                         </a>
-                        <a href="#about"
-                            class="bg-white bg-opacity-20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-30 transform hover:scale-105 transition duration-300 shadow-lg backdrop-blur-sm flex items-center justify-center">
+                        <a href="./pages/about.html"
+                            class="bg-white bg-opacity-20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-30 transform hover:scale-105 transition duration-300 shadow-lg backdrop-blur-sm flex items-center justify-center animate-float">
                             <i class="fas fa-info-circle mr-2"></i> Learn More
                         </a>
                     </div>
                 </div>
-
-                <!-- Right Side Icon -->
-              
-
             </div>
         </div>
     </section>
 
-
     <!-- Services Section -->
-<section id="services" class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Our Services</h2>
-      <p class="text-xl text-gray-700 max-w-2xl mx-auto">
-        We provide comprehensive cab services tailored to meet all your transportation needs
-      </p>
-    </div>
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="fade-in-down text-3xl md:text-4xl font-bold text-secondary mb-4">Our Services</h2>
+                <p class="fade-in-up text-xl text-gray-700 max-w-2xl mx-auto">
+                    We provide comprehensive cab services tailored to meet all your transportation needs
+                </p>
+            </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Card 1 -->
-      <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300">
-        <div class="card-hover-bg"></div>
-        <div class="relative z-10 text-center">
-          <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
-            <i class="fas fa-map-marker-alt text-3xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-secondary mb-2">Local Trips</h3>
-          <p class="text-gray-600 mb-4">Quick and convenient rides within the city for your daily commute and errands.</p>
-          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
-            Learn More <i class="fas fa-arrow-right ml-1"></i>
-          </button>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300 scale-in stagger-1">
+                    <div class="card-hover-bg"></div>
+                    <div class="relative z-10 text-center">
+                        <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
+                            <i class="fas fa-map-marker-alt text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-2">Local Trips</h3>
+                        <p class="text-gray-600 mb-4">Quick and convenient rides within the city for your daily commute and errands.</p>
+                        <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300 scale-in stagger-2">
+                    <div class="card-hover-bg"></div>
+                    <div class="relative z-10 text-center">
+                        <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
+                            <i class="fas fa-plane text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-2">Airport Pickup</h3>
+                        <p class="text-gray-600 mb-4">Reliable airport transfers with flight tracking and meet & greet service.</p>
+                        <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300 scale-in stagger-3">
+                    <div class="card-hover-bg"></div>
+                    <div class="relative z-10 text-center">
+                        <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
+                            <i class="fas fa-suitcase text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-2">Tour Packages</h3>
+                        <p class="text-gray-600 mb-4">Customized tour packages for sightseeing and outstation trips.</p>
+                        <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300 scale-in stagger-4">
+                    <div class="card-hover-bg"></div>
+                    <div class="relative z-10 text-center">
+                        <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
+                            <i class="fas fa-clock text-3xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-2">24/7 Service</h3>
+                        <p class="text-gray-600 mb-4">Round-the-clock availability for all your emergency and late-night travel needs.</p>
+                        <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
+                            Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300">
-        <div class="card-hover-bg"></div>
-        <div class="relative z-10 text-center">
-          <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
-            <i class="fas fa-plane text-3xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-secondary mb-2">Airport Pickup</h3>
-          <p class="text-gray-600 mb-4">Reliable airport transfers with flight tracking and meet & greet service.</p>
-          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
-            Learn More <i class="fas fa-arrow-right ml-1"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300">
-        <div class="card-hover-bg"></div>
-        <div class="relative z-10 text-center">
-          <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
-            <i class="fas fa-suitcase text-3xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-secondary mb-2">Tour Packages</h3>
-          <p class="text-gray-600 mb-4">Customized tour packages for sightseeing and outstation trips.</p>
-          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
-            Learn More <i class="fas fa-arrow-right ml-1"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="service-card group p-8 rounded-xl relative overflow-hidden bg-white shadow-lg transition-all duration-300">
-        <div class="card-hover-bg"></div>
-        <div class="relative z-10 text-center">
-          <div class="mb-4 transition-transform duration-300 group-hover:scale-110">
-            <i class="fas fa-clock text-3xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-semibold text-secondary mb-2">24/7 Service</h3>
-          <p class="text-gray-600 mb-4">Round-the-clock availability for all your emergency and late-night travel needs.</p>
-          <button class="text-primary font-semibold hover:text-yellow-600 transition-colors duration-300">
-            Learn More <i class="fas fa-arrow-right ml-1"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- Why Choose Us Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Text Content -->
-                <div class="scroll-animate">
+                <div class="fade-in-left">
                     <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">Why Choose Maa Cab Service?</h2>
-                    <p class="text-xl text-gray-700 mb-8">We're committed to providing exceptional service that exceeds
-                        your expectations</p>
+                    <p class="text-xl text-gray-700 mb-8">We're committed to providing exceptional service that exceeds your expectations</p>
 
                     <div class="space-y-6">
-                        <!-- Repeat block -->
-                        <div class="flex items-start group">
-                            <div
-                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                        <div class="flex items-start group slide-in-scale stagger-1">
+                            <div class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-shield-alt text-primary"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-semibold text-secondary mb-2">Safety First</h3>
-                                <p class="text-gray-600">All our drivers are verified and trained. Our vehicles undergo
-                                    regular maintenance and safety checks.</p>
+                                <p class="text-gray-600">All our drivers are verified and trained. Our vehicles undergo regular maintenance and safety checks.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start group">
-                            <div
-                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-dollar-sign text-primary"></i>
+                        <div class="flex items-start group slide-in-scale stagger-2">
+                            <div class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-inr text-primary"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-semibold text-secondary mb-2">Affordable Rates</h3>
-                                <p class="text-gray-600">Competitive pricing with no hidden charges. Get the best value
-                                    for your money.</p>
+                                <p class="text-gray-600">Competitive pricing with no hidden charges. Get the best value for your money.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start group">
-                            <div
-                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                        <div class="flex items-start group slide-in-scale stagger-3">
+                            <div class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-clock text-primary"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-semibold text-secondary mb-2">Punctual Service</h3>
-                                <p class="text-gray-600">We value your time. Our drivers are always on time and ready to
-                                    serve you.</p>
+                                <p class="text-gray-600">We value your time. Our drivers are always on time and ready to serve you.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start group">
-                            <div
-                                class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
+                        <div class="flex items-start group slide-in-scale stagger-4">
+                            <div class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300">
                                 <i class="fas fa-heart text-primary"></i>
                             </div>
                             <div>
                                 <h3 class="text-lg font-semibold text-secondary mb-2">Customer Care</h3>
-                                <p class="text-gray-600">24/7 customer support to assist you with bookings, queries, and
-                                    any concerns.</p>
+                                <p class="text-gray-600">24/7 customer support to assist you with bookings, queries, and any concerns.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Counter Content -->
-                <div class="scroll-animate" id="counter-section">
+                <div class="fade-in-right" id="counter-section">
                     <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-12 max-w-6xl mx-auto">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-
-                            <!-- Card Item -->
-                            <div
-                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
-                                <div
-                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                            <div class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg scale-in stagger-1">
+                                <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition animate-pulse-slow">
                                     <i class="fas fa-smile text-2xl"></i>
                                 </div>
-                                <div class="flex-1">
+                                    <div class="flex-1">
                                     <div class="text-4xl font-bold text-gray-800 counter" data-count="500">0</div>
                                     <div class="text-gray-500 text-sm font-medium">Happy Customers</div>
                                 </div>
                             </div>
 
-                            <div
-                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
-                                <div
-                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                            <div class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg scale-in stagger-2">
+                                <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition animate-pulse-slow">
                                     <i class="fas fa-id-card text-2xl"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="50">0</div>
+                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="10">0</div>
                                     <div class="text-gray-500 text-sm font-medium">Expert Drivers</div>
                                 </div>
                             </div>
 
-                            <div
-                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
-                                <div
-                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                            <div class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg scale-in stagger-3">
+                                <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition animate-pulse-slow">
                                     <i class="fas fa-calendar-alt text-2xl"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="5">0</div>
+                                    <div class="text-4xl font-bold text-gray-800 counter" data-count="15">0</div>
                                     <div class="text-gray-500 text-sm font-medium">Years of Experience</div>
                                 </div>
                             </div>
 
-                            <div
-                                class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg">
-                                <div
-                                    class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition">
+                            <div class="flex items-center gap-5 group transition-all duration-300 bg-gray-50 hover:bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg scale-in stagger-4">
+                                <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-100 text-primary group-hover:scale-105 transition animate-pulse-slow">
                                     <i class="fas fa-clock text-2xl"></i>
                                 </div>
                                 <div class="flex-1">
@@ -263,71 +228,58 @@
                                     <div class="text-gray-500 text-sm font-medium">24/7 Availability</div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
 
-
     <!-- Enhanced Call to Action Banner -->
-    <section class="relative py-20 bg-cover bg-center overflow-hidden"
+    <section class="relative py-20 bg-cover bg-center overflow-hidden parallax-bg"
         style="background-image: url('https://plus.unsplash.com/premium_photo-1661922380380-e214c7130cad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-        <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
-        <!-- CTA Content -->
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
             <div class="max-w-3xl mx-auto text-white">
-                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                <h2 class="fade-in-up text-4xl md:text-5xl font-extrabold leading-tight mb-6">
                     Ready to Book Your Ride?
                 </h2>
-                <p class="text-lg md:text-xl text-gray-300 mb-10">
+                <p class="fade-in-up stagger-1 text-lg md:text-xl text-gray-300 mb-10">
                     Get started with Maa Cab Service today and experience the difference in quality transportation.
                 </p>
 
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                    <!-- Call Now -->
-                    <a href="tel:+919876543210"
-                        class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-yellow-400 text-black font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto fade-in-up stagger-2">
+                    <a href="tel:+919512673360"
+                        class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-yellow-400 text-black font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse-slow">
                         <i class="fas fa-phone text-xl"></i>
                         Call Now
                     </a>
 
-                    <!-- WhatsApp -->
-                    <a href="https://wa.me/919876543210" target="_blank"
-                        class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl border border-white/30 text-white font-semibold text-lg hover:bg-white/10 hover:scale-105 transition-all duration-300">
+                    <a href="https://wa.me/+919512673360" target="_blank"
+                        class="flex items-center justify-center gap-2 px-6 py-4 rounded-xl border border-white/30 text-white font-semibold text-lg hover:bg-white/10 hover:scale-105 transition-all duration-300 animate-float">
                         <i class="fab fa-whatsapp text-xl"></i>
                         WhatsApp
                     </a>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="mt-8 text-large text-gray-300">
-                    <p> +91 98765 43210 &nbsp; | &nbsp; Available 24/7</p>
+                <div class="mt-8 text-large text-gray-300 fade-in-up stagger-3">
+                    <p>+91 9512673360 &nbsp; | &nbsp; Available 24/7</p>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Modern Testimonials Section -->
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 scroll-animate">
-                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">What Our Customers Say</h2>
-                <p class="text-xl text-gray-700 max-w-2xl mx-auto">Don't just take our word for it - hear from our
-                    satisfied customers</p>
+            <div class="text-center mb-16">
+                <h2 class="fade-in-down text-3xl md:text-4xl font-bold text-secondary mb-4">What Our Customers Say</h2>
+                <p class="fade-in-up text-xl text-gray-700 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied customers</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div
-                    class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 scroll-animate">
+                <div class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 slide-in-scale stagger-1">
                     <div class="flex items-center mb-4">
                         <div class="flex text-primary">
                             <i class="fas fa-star"></i>
@@ -338,11 +290,9 @@
                         </div>
                         <span class="ml-2 text-sm text-gray-600">5.0</span>
                     </div>
-                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Excellent service! The driver was punctual and
-                        the car was clean. I'll definitely use Maa Cab Service again for my future travels."</p>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Excellent service! The driver was punctual and the car was clean. I'll definitely use Maa Cab Service again for my future travels."</p>
                     <div class="flex items-center">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
                             <i class="fas fa-user text-white"></i>
                         </div>
                         <div>
@@ -352,8 +302,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 scroll-animate">
+                <div class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 slide-in-scale stagger-2">
                     <div class="flex items-center mb-4">
                         <div class="flex text-primary">
                             <i class="fas fa-star"></i>
@@ -364,11 +313,9 @@
                         </div>
                         <span class="ml-2 text-sm text-gray-600">5.0</span>
                     </div>
-                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Safe and reliable service. The driver was
-                        courteous and helped with our luggage. Highly recommend for airport transfers."</p>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Safe and reliable service. The driver was courteous and helped with our luggage. Highly recommend for airport transfers."</p>
                     <div class="flex items-center">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
                             <i class="fas fa-user text-white"></i>
                         </div>
                         <div>
@@ -378,8 +325,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 scroll-animate">
+                <div class="testimonial-card p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 slide-in-scale stagger-3">
                     <div class="flex items-center mb-4">
                         <div class="flex text-primary">
                             <i class="fas fa-star"></i>
@@ -390,11 +336,9 @@
                         </div>
                         <span class="ml-2 text-sm text-gray-600">5.0</span>
                     </div>
-                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Great experience with their tour package. The
-                        driver was knowledgeable about local attractions and made our trip memorable."</p>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">"Great experience with their tour package. The driver was knowledgeable about local attractions and made our trip memorable."</p>
                     <div class="flex items-center">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-primary to-yellow-400 rounded-full flex items-center justify-center mr-4 animate-pulse-slow">
                             <i class="fas fa-user text-white"></i>
                         </div>
                         <div>
@@ -411,51 +355,54 @@
 
 
     <!-- Footer -->
-  <div id="fotter"></div>
+    <div id="fotter"></div>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/919512673360" target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp text-white text-2xl"></i>
     </a>
 
     <!-- JavaScript -->
-  <script src="./js/script.js"></script>
-   <script>
-     // Mobile menu toggle
-  fetch("partials/header.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
+    <script src="./js/script.js"></script>
+    <script>
+        window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+        // Mobile menu toggle
+        fetch("partials/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
 
-      // Wait briefly to allow DOM to register elements
-      setTimeout(() => {
-        const btn = document.getElementById("mobile-menu-btn");
-        const menu = document.getElementById("mobile-menu");
+                // Wait briefly to allow DOM to register elements
+                setTimeout(() => {
+                    const btn = document.getElementById("mobile-menu-btn");
+                    const menu = document.getElementById("mobile-menu");
 
-        if (!btn || !menu) {
-          console.error("Menu toggle failed");
-          return;
-        }
+                    if (!btn || !menu) {
+                        console.error("Menu toggle failed");
+                        return;
+                    }
 
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
+                    btn.addEventListener("click", () => {
+                        menu.classList.toggle("hidden");
 
-          const icon = btn.querySelector("i");
-          if (icon) {
-            icon.classList.toggle("fa-bars");
-            icon.classList.toggle("fa-xmark");
-          }
-        });
-      }, 50); // 50ms delay works fine
-    });
-    fetch("partials/fotter.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("fotter").innerHTML = data;
-    });
-</script>
+                        const icon = btn.querySelector("i");
+                        if (icon) {
+                            icon.classList.toggle("fa-bars");
+                            icon.classList.toggle("fa-xmark");
+                        }
+                    });
+                }, 50); // 50ms delay works fine
+            });
+        fetch("partials/fotter.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("fotter").innerHTML = data;
+            });
+    </script>
 
-      
+
 </body>
 
 </html>

@@ -1,650 +1,352 @@
-<!-- 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SwiftCab</title>
-    <meta name="description" content="Get in touch with SwiftCab for bookings and inquiries">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-taxi"></i>
-                <span>SwiftCab</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./services.html" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./coverage.html" class="nav-link">Coverage</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link active">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-
-    <section class="page-header">
-        <div class="container">
-            <h1 data-aos="fade-up">Contact Us</h1>
-            <p data-aos="fade-up" data-aos-delay="100">Get in touch for bookings, inquiries, or support</p>
-        </div>
-    </section>
-
-
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-grid">
- 
-                <div class="contact-info" data-aos="fade-right">
-                    <h2>Get In Touch</h2>
-                    <p>Ready to book your ride or have questions about our services? We're here to help 24/7.</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="method-details">
-                                <h3>Call Us</h3>
-                                <p><a href="tel:+1234567890">(123) 456-7890</a></p>
-                                <small>Available 24/7 for bookings</small>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="method-details">
-                                <h3>Email Us</h3>
-                                <p><a href="mailto:info@swiftcab.com">info@swiftcab.com</a></p>
-                                <small>We'll respond within 2 hours</small>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="method-details">
-                                <h3>Visit Us</h3>
-                                <p>123 Main Street<br>City, State 12345</p>
-                                <small>Mon-Fri: 8:00 AM - 6:00 PM</small>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="method-details">
-                                <h3>Service Hours</h3>
-                                <p>24/7 Taxi Service</p>
-                                <small>Office: Mon-Fri 8AM-6PM</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="emergency-contact">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <div>
-                            <h4>Emergency Rides</h4>
-                            <p>For urgent transportation needs, call our emergency line: <a href="tel:+1234567891">(123) 456-7891</a></p>
-                        </div>
-                    </div>
-                </div>
-
- 
-                <div class="contact-form-container" data-aos="fade-left">
-                    <form class="contact-form" id="contactForm">
-                        <h2>Send Us a Message</h2>
-                        
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">Service Type</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service</option>
-                                <option value="airport">Airport Transfer</option>
-                                <option value="city">City Rides</option>
-                                <option value="long-distance">Long Distance</option>
-                                <option value="corporate">Corporate Travel</option>
-                                <option value="events">Special Events</option>
-                                <option value="hourly">Hourly Rental</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="pickup">Pickup Location</label>
-                                <input type="text" id="pickup" name="pickup" placeholder="Enter pickup address">
-                            </div>
-                            <div class="form-group">
-                                <label for="destination">Destination</label>
-                                <input type="text" id="destination" name="destination" placeholder="Enter destination">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Preferred Date</label>
-                                <input type="date" id="date" name="date">
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Preferred Time</label>
-                                <input type="time" id="time" name="time">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message or Special Requirements</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Please describe your transportation needs or any special requirements..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-large">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Frequently Asked Questions</h2>
-                <p>Quick answers to common questions</p>
-            </div>
-            <div class="faq-grid">
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-                    <h3>How do I book a ride?</h3>
-                    <p>You can book a ride by calling us at (123) 456-7890, using our contact form, or emailing us directly. We're available 24/7 for bookings.</p>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                    <h3>What payment methods do you accept?</h3>
-                    <p>We accept cash, all major credit cards, and digital payments. Corporate accounts are also available for business customers.</p>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                    <h3>How far in advance should I book?</h3>
-                    <p>For immediate rides, we typically respond within 5-10 minutes. For scheduled rides, we recommend booking at least 2 hours in advance.</p>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Do you provide airport services?</h3>
-                    <p>Yes, we offer comprehensive airport transfer services with flight tracking and meet & greet options available.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-taxi"></i>
-                        <span>SwiftCab</span>
-                    </div>
-                    <p>Your trusted partner for safe and reliable transportation services.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="coverage.html">Coverage</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+1234567890">(123) 456-7890</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:info@swiftcab.com">info@swiftcab.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>123 Main St, City, State 12345</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 SwiftCab. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-
-    <script src="../js/script.js"></script>
-</body>
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Maa Cab Service</title>
+    <title>Contact Us - Maa Cab Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
-   <script src="../js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dpv01gwka/image/upload/v1752859333/logo_thvqnn.jpg">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="../css/globe.css">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease;
+        .hero-gradient {
+            background-image: url('https://res.cloudinary.com/dpv01gwka/image/upload/v1752860180/Contact_wpe6w9.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;        /* Stretch to cover full area */
+            background-position: center;   /* Center the image */
+            background-attachment: fixed;  /* Optional: creates parallax effect */
         }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+
+
+        .shadow-soft {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-        
-        .hover-lift:hover {
-            transform: translateY(-2px);
-            transition: transform 0.3s ease;
+
+        .contact-icons {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
         }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <div id="header"></div>
     <!-- Hero Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <!-- Left content -->
-                <div class="lg:w-1/2 text-center lg:text-left">
-                    <div class="inline-block px-4 py-2 bg-primary/10 rounded-full text-secondary font-medium mb-6">
-                        Premium Cab Service
-                    </div>
-                    
-                    <h1 class="text-5xl md:text-6xl font-bold text-secondary mb-6">
-                        About
-                        <span class="text-primary">Maa Cab</span>
-                    </h1>
-                    
-                    <p class="text-xl text-gray-700 mb-8 max-w-lg mx-auto lg:mx-0">
-                        Your trusted partner for safe, reliable, and comfortable transportation across the city
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                        <button class="bg-primary hover:bg-yellow-500 text-secondary px-8 py-4 rounded-lg font-semibold transition-colors">
-                            Book Now
-                        </button>
-                        <button class="border-2 border-gray-200 hover:border-primary text-secondary px-8 py-4 rounded-lg font-semibold transition-colors">
-                            Learn More
-                        </button>
-                    </div>
-                    
-                    <!-- Simple Stats -->
-                    <div class="grid grid-cols-3 gap-8">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-1">500+</div>
-                            <div class="text-sm text-gray-600">Happy Customers</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-1">5+</div>
-                            <div class="text-sm text-gray-600">Years Experience</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-secondary mb-1">24/7</div>
-                            <div class="text-sm text-gray-600">Service Available</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Right content - Simple image -->
-                <div class="lg:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-                         alt="Modern Taxi Service" 
-                         class="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Company Introduction -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="lg:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Maa Cab Service Fleet" 
-                         class="w-full h-96 object-cover rounded-2xl shadow-lg">
-                </div>
-                
-                <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold text-secondary mb-6">
-                        Welcome to Maa Cab Service
-                    </h2>
-                    <p class="text-lg text-gray-700 mb-6">
-                        Since our inception, Maa Cab Service has been committed to providing exceptional transportation services that prioritize safety, comfort, and reliability. We understand that every journey matters, whether it's a daily commute, airport transfer, or special occasion.
-                    </p>
-                    <p class="text-lg text-gray-700 mb-8">
-                        Our fleet of well-maintained vehicles and experienced drivers ensure that you reach your destination safely and on time. We take pride in our personalized service approach, treating every customer like family.
-                    </p>
-                    
-                    <button class="bg-primary hover:bg-yellow-500 text-secondary px-8 py-4 rounded-lg font-semibold transition-colors">
-                        Book Your Ride Today
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Values -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-secondary mb-6">
-                    Our Mission & Values
-                </h2>
-                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-                    We are driven by our commitment to excellence and our core values that guide every aspect of our service.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl border border-gray-100 hover-lift">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Safety First</h3>
-                    <p class="text-gray-700">Your safety is our top priority. All our vehicles undergo regular maintenance and safety checks, and our drivers are thoroughly trained and verified.</p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl border border-gray-100 hover-lift">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Punctuality</h3>
-                    <p class="text-gray-700">We value your time and ensure timely pickups and drops. Our drivers are well-versed with local routes and traffic patterns.</p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl border border-gray-100 hover-lift">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Customer Care</h3>
-                    <p class="text-gray-700">We treat every customer with respect and care, providing personalized service that exceeds expectations every time.</p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl border border-gray-100 hover-lift">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Fair Pricing</h3>
-                    <p class="text-gray-700">Transparent and competitive pricing with no hidden charges. We believe in providing value for money services.</p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl border border-gray-100 hover-lift">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Innovation</h3>
-                    <p class="text-gray-700">We continuously upgrade our services with modern technology and innovative solutions to enhance your travel experience.</p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl border border-gray-100 hover-lift">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Community</h3>
-                    <p class="text-gray-700">We are proud to serve our local community and contribute to the economic growth of our region through reliable transportation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Driver Experience / Team Highlight -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-secondary mb-6">
-                    Meet Our Expert Team
-                </h2>
-                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-                    Our experienced and professional drivers are the backbone of our service, ensuring your journey is comfortable and safe.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="text-center bg-white p-8 rounded-2xl border border-gray-100">
-                    <div class="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-2">Experienced Drivers</h3>
-                    <p class="text-gray-700 mb-4">All our drivers have 5+ years of professional driving experience</p>
-                    <div class="text-3xl font-bold text-primary">5+</div>
-                    <div class="text-sm text-gray-600">Years Average Experience</div>
-                </div>
-                
-                <div class="text-center bg-white p-8 rounded-2xl border border-gray-100">
-                    <div class="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-2">Licensed & Verified</h3>
-                    <p class="text-gray-700 mb-4">All drivers are properly licensed and background verified</p>
-                    <div class="text-3xl font-bold text-primary">100%</div>
-                    <div class="text-sm text-gray-600">Verified Drivers</div>
-                </div>
-                
-                <div class="text-center bg-white p-8 rounded-2xl border border-gray-100">
-                    <div class="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary mb-2">Local Knowledge</h3>
-                    <p class="text-gray-700 mb-4">Expert knowledge of local routes and traffic patterns</p>
-                    <div class="text-3xl font-bold text-primary">24/7</div>
-                    <div class="text-sm text-gray-600">Local Support</div>
-                </div>
-            </div>
-            
-            <!-- Driver Qualities -->
-            <div class="bg-white rounded-2xl p-12 border border-gray-100">
-                <div class="text-center mb-12">
-                    <h3 class="text-3xl font-bold text-secondary mb-4">Why Choose Our Drivers?</h3>
-                    <p class="text-xl text-gray-700 max-w-2xl mx-auto">
-                        Our drivers are more than just chauffeurs – they're your travel partners committed to your comfort and safety.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2 text-secondary">Professional</h4>
-                        <p class="text-gray-700 text-sm">Courteous and well-trained</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2 text-secondary">Reliable</h4>
-                        <p class="text-gray-700 text-sm">Always on time</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2 text-secondary">Safe</h4>
-                        <p class="text-gray-700 text-sm">Defensive driving skills</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2 text-secondary">Local Expert</h4>
-                        <p class="text-gray-700 text-sm">Know every route</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-20 bg-primary">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold text-secondary mb-6">
-                Ready to Experience the Difference?
-            </h2>
-            <p class="text-xl text-secondary mb-8 max-w-2xl mx-auto">
-                Join hundreds of satisfied customers who trust Maa Cab Service for their transportation needs.
+    <section class="hero-gradient py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Get in Touch</h2>
+            <p class="text-xl text-yellow-100 max-w-2xl mx-auto">
+                Ready to book your ride or have questions? We're here to help you travel safely and comfortably across
+                Gujarat.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-secondary hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
-                    Book Now
-                </button>
-                <button class="bg-white hover:bg-gray-100 text-secondary px-8 py-4 rounded-lg font-semibold transition-colors">
-                    Contact Us
-                </button>
-            </div>
         </div>
     </section>
-<div id="fotter"></div>
-    <script>
-        // Simple fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                    <p class="text-gray-600 mb-8">Get in touch with us for reliable cab services across Gujarat. We're
+                        available 24/7 for your convenience.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="contact-icons w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Contact Person</h4>
+                            <p class="text-gray-600 hover:text-yellow-500 transition-colors">Mayur Khutan </p>
+                        </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="flex items-center space-x-4">
+                        <div class="contact-icons w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-globe text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Website</h4>
+                            <a href="tel:+91 9512673360"
+                                class="text-gray-600 hover:text-yellow-500 transition-colors">https://maacabservices.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="contact-icons w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-phone text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Phone</h4>
+                            <a href="tel:+91 9512673360" class="text-gray-600 hover:text-yellow-500 transition-colors">+91 9512673360</a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="flex items-center space-x-4">
+                        <div class="contact-icons w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">WhatsApp</h4>
+                            <a href="https://wa.me/919512673360?text=Hi%20I%20want%20to%20book%20a%20cab"
+                                target="_blank" class="text-gray-600 hover:text-yellow-500 transition-colors">+91
+                                9512673360</a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="flex items-center space-x-4">
+                        <div class="contact-icons w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Email</h4>
+                            <a href="mailto:maacabservices92@gmail.com"
+                                class="text-gray-600 hover:text-yellow-500 transition-colors">maacabservices92@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="flex items-start space-x-4">
+                        <div class="contact-icons w-12 h-12 rounded-full flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Address</h4>
+                            <p class="text-gray-600">Dabhor, Veraval, Gir Somnath<br>India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="bg-white rounded-lg shadow-soft p-6">
+                    <h4 class="font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-clock text-yellow-500 mr-2"></i>
+                        Operating Hours
+                    </h4>
+                    <div class="space-y-2 text-gray-600">
+                        <p><span class="font-medium">24/7 Service Available</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-lg shadow-soft p-8">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">Book Your Ride</h3>
+
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="user_name" class="block text-sm font-medium text-gray-700 mb-2">Full Name
+                                *</label>
+                            <input type="text" id="user_name" name="full_name" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                                placeholder="Enter your full name" aria-label="Full Name">
+                        </div>
+                        <div>
+                            <label for="user_email" class="block text-sm font-medium text-gray-700 mb-2">Email Address
+                                *</label>
+                            <input type="email" id="user_email" name="user_email" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                                placeholder="Enter your email" aria-label="Email Address">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="user_phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number
+                            *</label>
+                        <input type="tel" id="user_phone" name="phone" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                            placeholder="+91 98765 43210" aria-label="Phone Number">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="pickup_location" class="block text-sm font-medium text-gray-700 mb-2">Pickup
+                                Location *</label>
+                            <input type="text" id="pickup_location" name="pickup_location" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                                placeholder="Enter pickup address" aria-label="Pickup Location">
+                        </div>
+                        <div>
+                            <label for="drop_location" class="block text-sm font-medium text-gray-700 mb-2">Drop
+                                Location *</label>
+                            <input type="text" id="drop_location" name="drop_location" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                                placeholder="Enter destination" aria-label="Drop Location">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="travel_datetime" class="block text-sm font-medium text-gray-700 mb-2">Travel Date &
+                            Time *</label>
+                        <input type="date" name="date" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                            aria-label="Travel Date">
+                        <input type="time" name="time" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
+                            aria-label="Travel Time">
+
+                    </div>
+
+                    <div>
+                        <label for="user_message" class="block text-sm font-medium text-gray-700 mb-2">Additional
+                            Message</label>
+                        <textarea id="user_message" name="message" rows="4"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all resize-none"
+                            placeholder="Any special requirements or additional information..."
+                            aria-label="Additional Message"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold py-4 px-6 rounded-lg hover:from-yellow-500 hover:to-yellow-600 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Book Your Ride
+                    </button>
+
+                    <p id="form-message" class="text-center text-sm font-medium hidden"></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="mt-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center">Our Location</h3>
+            <div class="bg-white rounded-lg shadow-soft overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3726.182290562683!2d70.35933417525429!3d20.945193380683296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDU2JzQyLjciTiA3MMKwMjEnNDIuOSJF!5e0!3m2!1sen!2sin!4v1752770576334!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    aria-label="Google Map showing Maa Cab Service location in Somnath, Gujarat">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="fotter"></div>
+
+    <a href="https://wa.me/919512673360?text=Hi%20I%20want%20to%20book%20a%20cab" target="_blank"
+        class="whatsapp-float">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
+    
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("UneX9V4k76TXpavMp"); // ✅ Your correct public key
+
+    const form = document.getElementById("contact-form");
+    const messageBox = document.getElementById("form-message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = {
+        full_name: form.full_name.value.trim(),
+        user_email: form.user_email.value.trim(),
+        phone: form.phone.value.trim(),
+        pickup_location: form.pickup_location.value.trim(),
+        drop_location: form.drop_location.value.trim(),
+        date: form.date.value,
+        time: form.time.value,
+        message: form.message.value.trim() || "-",
+      };
+
+      // 🔒 Simple validation
+      if (
+        !formData.full_name ||
+        !formData.user_email ||
+        !formData.phone ||
+        !formData.pickup_location ||
+        !formData.drop_location ||
+        !formData.date ||
+        !formData.time
+      ) {
+        messageBox.textContent = "⚠ Please fill out all required fields.";
+        messageBox.className = "text-red-600 text-center text-sm font-medium";
+        messageBox.classList.remove("hidden");
+        return;
+      }
+
+      const submitBtn = form.querySelector("button[type='submit']");
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+
+      // Step 1: Send to cab owner
+      emailjs
+        .send("service_35n3vih", "template_qqkkg8r", formData)
+        .then(() => {
+          // Step 2: Auto-reply to user
+          return emailjs.send("service_35n3vih", "template_whxbdig", formData);
+        })
+        .then(() => {
+          messageBox.textContent = "✅ Your booking has been received!";
+          messageBox.className = "text-green-600 text-center text-sm font-medium";
+          messageBox.classList.remove("hidden");
+          form.reset();
+        })
+        .catch((error) => {
+          console.error("❌ EmailJS error:", error);
+          messageBox.textContent = "❌ Something went wrong. Please try again.";
+          messageBox.className = "text-red-600 text-center text-sm font-medium";
+          messageBox.classList.remove("hidden");
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Book Your Ride';
+        });
+    });
+  })();
+</script>
+
+
+   <script>
+
+        // Mobile menu toggle
+        fetch("../partials/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+
+                // Wait briefly to allow DOM to register elements
+                setTimeout(() => {
+                    const btn = document.getElementById("mobile-menu-btn");
+                    const menu = document.getElementById("mobile-menu");
+
+                    if (!btn || !menu) {
+                        console.error("Menu toggle failed");
+                        return;
+                    }
+
+                    btn.addEventListener("click", () => {
+                        menu.classList.toggle("hidden");
+
+                        const icon = btn.querySelector("i");
+                        if (icon) {
+                            icon.classList.toggle("fa-bars");
+                            icon.classList.toggle("fa-xmark");
+                        }
+                    });
+                }, 50); // 50ms delay works fine
             });
-        }, observerOptions);
-
-        // Observe all elements with fade-in class
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-             // Mobile menu toggle
-  fetch("partials/header.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
-
-      // Wait briefly to allow DOM to register elements
-      setTimeout(() => {
-        const btn = document.getElementById("mobile-menu-btn");
-        const menu = document.getElementById("mobile-menu");
-
-        if (!btn || !menu) {
-          console.error("Menu toggle failed");
-          return;
-        }
-
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-
-          const icon = btn.querySelector("i");
-          if (icon) {
-            icon.classList.toggle("fa-bars");
-            icon.classList.toggle("fa-xmark");
-          }
-        });
-      }, 50); // 50ms delay works fine
-    });
-    fetch("partials/fotter.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("fotter").innerHTML = data;
-    });
+        fetch("../partials/fotter.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("fotter").innerHTML = data;
+            });
     </script>
+  
 </body>
+
 </html>

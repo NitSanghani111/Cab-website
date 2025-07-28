@@ -44,7 +44,7 @@
         }
          .hero-bg {
             background: linear-gradient(135deg, rgba(31, 41, 55, 0.85), rgba(250, 204, 21, 0.1)), 
-                        url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+                        url('https://res.cloudinary.com/dpv01gwka/image/upload/v1752860013/Services_anytae.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: scroll;

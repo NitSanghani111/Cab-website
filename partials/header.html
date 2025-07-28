@@ -1,17 +1,19 @@
-<nav class="bg-white shadow sticky top-0 z-50">
+
+<nav id="navbar" class="bg-white shadow sticky top-0 z-50 transition-transform duration-300 transform">
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
+    <div class="flex justify-between items-center h-20">
       <div class="flex items-center space-x-3">
-        <img src="../imgs/logo.jpg" alt="Maa Cab Logo"
-             class="h-12 w-auto object-contain rounded-md shadow-sm" />
-        <span class="text-xl font-bold text-gray-800">Maa Cab Service</span>
+        <img src="https://res.cloudinary.com/dpv01gwka/image/upload/v1752859333/logo_thvqnn.jpg" alt="Maa Cab Logo"
+             class="h-14 w-auto object-contain rounded-md shadow-sm" />
+        <span class="text-2xl font-bold text-gray-800">Maa Cab Service</span>
       </div>
       <div class="hidden md:flex space-x-8">
         <a href="../index.html" class="text-gray-700 hover:text-yellow-500">Home</a>
-        <a href="./about.html" class="text-gray-700 hover:text-yellow-500">About</a>
-        <a href="../pages/services.html" class="text-gray-700 hover:text-yellow-500">Services</a>
-        <a href="../pages/coverage.html" class="text-gray-700 hover:text-yellow-500">Gallery</a>
-        <a href="../pages/contact.html" class="text-gray-700 hover:text-yellow-500">Contact</a>
+        <a href="/pages/about.html" class="text-gray-700 hover:text-yellow-500">About</a>
+        <a href="/pages/services.html" class="text-gray-700 hover:text-yellow-500">Services</a>
+        <a href="/pages/coverage.html" class="text-gray-700 hover:text-yellow-500">Gallery</a>
+        <a href="/pages/contact.html" class="text-gray-700 hover:text-yellow-500">Contact</a>
       </div>
       <div class="md:hidden">
         <button id="mobile-menu-btn" class="text-gray-700 text-2xl">
@@ -30,3 +32,22 @@
     <a href="../pages/contact.html" class="block text-gray-700 hover:text-yellow-500">Contact</a>
   </div>
 </nav>
+<!-- 
+<script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down
+      navbar.classList.add('-translate-y-full');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('-translate-y-full');
+    }
+
+    lastScrollY = currentScrollY;
+  });
+</script> -->
