@@ -80,7 +80,7 @@ cd maa-cab-service
 **Option 1: GitHub Pages**
 - Push to a GitHub repo
 - Enable Pages under `Settings → Pages → Source: root`
-- Your site will be live at `https://your-username.github.io/maa-cab-service/`
+- Your site will be live at `https://Nitsanghani111.github.io/maa-cab-service/`
 
 **Option 2: Cloudflare Pages**
 - Connect repo to Cloudflare Pages
