@@ -1,5 +1,5 @@
-# robots.txt
-User-agent: *
-Allow: /
+    # robots.txt
+    User-agent: *
+    Allow: /
 
-Sitemap: https://www.maacabservices.com/sitemap.xml
+    Sitemap: https://www.maacabservices.com/sitemap.xml

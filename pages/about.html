@@ -470,7 +470,7 @@
     window.scrollTo(0, 0);
   };
         // Mobile menu toggle
-        fetch("../partials/header.html")
+        fetch("/partials/header.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
@@ -496,7 +496,7 @@
                     });
                 }, 50); // 50ms delay works fine
             });
-        fetch("../partials/fotter.html")
+        fetch("/partials/fotter.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("fotter").innerHTML = data;

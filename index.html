@@ -115,7 +115,7 @@
 
 
     <!-- Hero Section with Video Background -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" class="relative min-h-screen max-h-[95vh] flex items-center justify-center overflow-hidden">
         <!-- Video Background -->
         <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay muted loop playsinline>
             <source src="https://res.cloudinary.com/dpv01gwka/video/upload/v1752859568/demo_awthnp.mp4"
@@ -498,7 +498,7 @@
             window.scrollTo(0, 0);
         };
         // Mobile menu toggle
-        fetch("partials/header.html")
+        fetch("/partials/header.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
@@ -524,7 +524,7 @@
                     });
                 }, 50); // 50ms delay works fine
             });
-        fetch("partials/fotter.html")
+        fetch("/partials/fotter.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("fotter").innerHTML = data;
