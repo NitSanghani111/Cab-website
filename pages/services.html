@@ -678,17 +678,21 @@
 
 
     <script src="../js/services.js"></script>
-      <script>
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        };
-        // Mobile menu toggle
-       fetch("/partials/header.html?version=1.0.2")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
+<script>
+  // Reset scroll position on page reload
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
 
-        // Use MutationObserver instead of setTimeout (more reliable)
+  // Dynamically load header
+  fetch("/partials/header.html?version=1.0.2")
+    .then(res => res.text())
+    .then(data => {
+      const header = document.getElementById("header");
+      if (header) {
+        header.innerHTML = data;
+
+        // Wait for header content to load, then set up mobile menu toggle
         const observer = new MutationObserver(() => {
           const btn = document.getElementById("mobile-menu-btn");
           const menu = document.getElementById("mobile-menu");
@@ -703,22 +707,28 @@
               }
             });
 
-            observer.disconnect(); // done observing
+            observer.disconnect(); // Stop observing once it's set
           }
         });
 
-        observer.observe(document.getElementById("header"), {
+        observer.observe(header, {
           childList: true,
           subtree: true
         });
-      });
+      }
+    });
 
-        fetch("/partials/fotter.html?version=1.0.2")
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("fotter").innerHTML = data;
-            });
-    </script>
+  // Dynamically load footer with cache-busting
+  fetch("/partials/fotter.html?version=1.0.2")
+    .then(res => res.text())
+    .then(data => {
+      const footer = document.getElementById("fotter");
+      if (footer) {
+        footer.innerHTML = data;
+      }
+    });
+</script>
+
   
 </body >
 </html >
