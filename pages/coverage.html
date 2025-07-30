@@ -328,42 +328,46 @@
     </a>
 
 <script src="../js/gallary.js"></script>
-<script>
-    window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
-         // Mobile menu toggle
-  fetch("../partials/header.html?version=1.0.2")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
+  <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+        // Mobile menu toggle
+       fetch("/partials/header.html?version=1.0.2")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
 
-      // Wait briefly to allow DOM to register elements
-      setTimeout(() => {
-        const btn = document.getElementById("mobile-menu-btn");
-        const menu = document.getElementById("mobile-menu");
+        // Use MutationObserver instead of setTimeout (more reliable)
+        const observer = new MutationObserver(() => {
+          const btn = document.getElementById("mobile-menu-btn");
+          const menu = document.getElementById("mobile-menu");
 
-        if (!btn || !menu) {
-          console.error("Menu toggle failed");
-          return;
-        }
+          if (btn && menu) {
+            btn.addEventListener("click", () => {
+              menu.classList.toggle("hidden");
+              const icon = btn.querySelector("i");
+              if (icon) {
+                icon.classList.toggle("fa-bars");
+                icon.classList.toggle("fa-xmark");
+              }
+            });
 
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-
-          const icon = btn.querySelector("i");
-          if (icon) {
-            icon.classList.toggle("fa-bars");
-            icon.classList.toggle("fa-xmark");
+            observer.disconnect(); // done observing
           }
         });
-      }, 50); // 50ms delay works fine
-    });
-    fetch("../partials/fotter.html?version=1.0.2")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("fotter").innerHTML = data;
-    });
-</script>
+
+        observer.observe(document.getElementById("header"), {
+          childList: true,
+          subtree: true
+        });
+      });
+
+        fetch("/partials/fotter.html?version=1.0.2")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("fotter").innerHTML = data;
+            });
+    </script>
 </body>
 </html>
