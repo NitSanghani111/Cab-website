@@ -683,7 +683,7 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
              // Mobile menu toggle
-  fetch("../partials/header.html")
+  fetch("../partials/header.html?version=1.0.2")
     .then(res => res.text())
     .then(data => {
       document.getElementById("header").innerHTML = data;
@@ -709,7 +709,7 @@ window.onbeforeunload = function () {
         });
       }, 50); // 50ms delay works fine
     });
-    fetch("../partials/fotter.html")
+    fetch("../partials/fotter.html?version=1.0.2")
     .then(res => res.text())
     .then(data => {
       document.getElementById("fotter").innerHTML = data;
