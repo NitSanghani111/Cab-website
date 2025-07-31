@@ -1,34 +1,37 @@
-
-<nav id="navbar" class="bg-white shadow sticky top-0 z-50 transition-transform duration-300 transform">
-
+<nav class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-20">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo and Brand -->
       <div class="flex items-center space-x-3">
         <img src="https://res.cloudinary.com/dpv01gwka/image/upload/v1752859333/logo_thvqnn.jpg" alt="Maa Cab Logo"
-             class="h-14 w-auto object-contain rounded-md shadow-sm" />
-        <span class="text-2xl font-bold text-gray-800">Maa Cab Service</span>
+          class="h-12 w-12 rounded-md object-cover shadow-sm" />
+        <span class="text-xl font-semibold text-gray-800">Maa Cab Service</span>
       </div>
-     <div class="hidden md:flex space-x-8">
-  <a href="/index.html" class="text-gray-700 hover:text-yellow-500">Home</a>
-  <a href="/pages/about.html" class="text-gray-700 hover:text-yellow-500">About</a>
-  <a href="/pages/services.html" class="text-gray-700 hover:text-yellow-500">Services</a>
-  <a href="/pages/coverage.html" class="text-gray-700 hover:text-yellow-500">Gallery</a>
-  <a href="/pages/contact.html" class="text-gray-700 hover:text-yellow-500">Contact</a>
-</div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6">
+        <a href="/index.html" class="text-gray-700 hover:text-yellow-500 transition">Home</a>
+        <a href="/pages/about.html" class="text-gray-700 hover:text-yellow-500 transition">About</a>
+        <a href="/pages/services.html" class="text-gray-700 hover:text-yellow-500 transition">Services</a>
+        <a href="/pages/coverage.html" class="text-gray-700 hover:text-yellow-500 transition">Gallery</a>
+        <a href="/pages/contact.html" class="text-gray-700 hover:text-yellow-500 transition">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
       <div class="md:hidden">
-        <button id="mobile-menu-btn" class="text-gray-700 text-2xl">
-          <span class="sr-only">Toggle mobile menu</span>
-          <i class="fas fa-bars" aria-hidden="true"></i>
+        <button id="mobile-menu-btn" class="text-2xl text-gray-700 focus:outline-none">
+          <i class="fas fa-bars"></i>
         </button>
       </div>
     </div>
   </div>
 
-<div id="mobile-menu" class="hidden md:hidden px-4 py-3 space-y-2 bg-white border-t border-gray-200">
-  <a href="/index.html" class="block text-gray-700 hover:text-yellow-500">Home</a>
-  <a href="/pages/about.html" class="block text-gray-700 hover:text-yellow-500">About</a>
-  <a href="/pages/services.html" class="block text-gray-700 hover:text-yellow-500">Services</a>
-  <a href="/pages/coverage.html" class="block text-gray-700 hover:text-yellow-500">Gallery</a>
-  <a href="/pages/contact.html" class="block text-gray-700 hover:text-yellow-500">Contact</a>
-</div>
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 py-4 space-y-3 bg-white border-t border-gray-200">
+    <a href="/index.html" class="block text-gray-700 hover:text-yellow-500">Home</a>
+    <a href="/pages/about.html" class="block text-gray-700 hover:text-yellow-500">About</a>
+    <a href="/pages/services.html" class="block text-gray-700 hover:text-yellow-500">Services</a>
+    <a href="/pages/coverage.html" class="block text-gray-700 hover:text-yellow-500">Gallery</a>
+    <a href="/pages/contact.html" class="block text-gray-700 hover:text-yellow-500">Contact</a>
+  </div>
 </nav>
