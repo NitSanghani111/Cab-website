@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
+  // const btn = document.getElementById("mobile-menu-btn");
+  // const menu = document.getElementById("mobile-menu");
 
-  if (btn && menu) {
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
+  // if (btn && menu) {
+  //   btn.addEventListener("click", () => {
+  //     menu.classList.toggle("hidden");
 
-      const icon = btn.querySelector("i");
-      if (icon) {
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-xmark");
-      }
-    });
-  }
+  //     const icon = btn.querySelector("i");
+  //     if (icon) {
+  //       icon.classList.toggle("fa-bars");
+  //       icon.classList.toggle("fa-xmark");
+  //     }
+  //   });
+  // }
 
   const navbar = document.getElementById("navbar");
   let lastScrollY = window.scrollY;
