@@ -102,9 +102,9 @@
         href="https://res.cloudinary.com/dpv01gwka/image/upload/v1752859333/logo_thvqnn.jpg">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">  
     <script src="./js/tailwind-config.js"></script>
-
+<script src="./js/responsive.js"></script>
 
 </head>
 
@@ -498,36 +498,29 @@
             window.scrollTo(0, 0);
         };
         // Mobile menu toggle
-       fetch("/partials/header.html?version=1.0.2")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
+      fetch("/partials/header.html?version=1.0.2")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
 
-        // Use MutationObserver instead of setTimeout (more reliable)
-        const observer = new MutationObserver(() => {
-          const btn = document.getElementById("mobile-menu-btn");
-          const menu = document.getElementById("mobile-menu");
+    // Wait for DOM to render
+    setTimeout(() => {
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
 
-          if (btn && menu) {
-            btn.addEventListener("click", () => {
-              menu.classList.toggle("hidden");
-              const icon = btn.querySelector("i");
-              if (icon) {
-                icon.classList.toggle("fa-bars");
-                icon.classList.toggle("fa-xmark");
-              }
-            });
-
-            observer.disconnect(); // done observing
+      console.log("Using setTimeout...");
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          const icon = btn.querySelector("i");
+          if (icon) {
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-xmark");
           }
         });
-
-        observer.observe(document.getElementById("header"), {
-          childList: true,
-          subtree: true
-        });
-      });
-
+      }
+    }, 300); // delay just enough for header to render
+  });
         fetch("/partials/fotter.html?version=1.0.2")
             .then(res => res.text())
             .then(data => {
